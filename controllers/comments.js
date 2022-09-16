@@ -13,7 +13,7 @@ module.exports = {
         // sets comment to logged in user id
         madeBy: req.user.id,
         // comment belongs to the post with this id
-        post: req.params.id,
+        postId: req.params.id,
       })
       console.log("Comment added")
       // redirect back to post to update changes
