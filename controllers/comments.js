@@ -10,6 +10,8 @@ module.exports = {
         comment: req.body.comment,
         // likes always start at 0
         likes: 0,
+        // sets comment to logged in user id
+        madeBy: req.user.id,
         // comment belongs to the post with this id
         post: req.params.id,
       })
