@@ -37,6 +37,14 @@
         </div>
         <button class="btn btn-primary" type="submit">Post comment</button>
     </div>
+    <!--render comments-->
+    <ul>
+      <% for(var i=0; i<comments.length; i++) {%>
+        <li class="col-6 justify-content-between mt-5">
+          <div><%= comments[i].comment %></div>
+        </li>
+      <% } %>
+      </ul>
     <div class="col-6 mt-5">
       <a class="btn btn-primary" href="/profile">Return to Profile</a>
       <a class="btn btn-primary" href="/feed">Return to Feed</a>
