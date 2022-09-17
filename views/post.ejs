@@ -27,6 +27,16 @@
     <div class="col-3 mt-5">
       <p><%= post.caption %></p>
     </div>
+    <!--add comments form-->
+    <div>
+      <form action="/comment/createComment/<%= post._id%>" enctype="multipart/form-data" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="title" name="title">
+            
+            <!--<label for="title" class="form-label">Post Comment</label> -->
+        </div>
+        <button class="btn btn-primary" type="submit">Post comment</button>
+    </div>
     <div class="col-6 mt-5">
       <a class="btn btn-primary" href="/profile">Return to Profile</a>
       <a class="btn btn-primary" href="/feed">Return to Feed</a>
