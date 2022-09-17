@@ -4,6 +4,7 @@ const mongoose = require("mongoose")
 const CommentSchema = new mongoose.Schema({
   comment: {type: String, required: true},
   // post will be set to what post is commented on
+  likes: {type: Number, required: true},
   postId: {
     type: mongoose.Schema.Types.ObjectId, 
     ref: "Post"
