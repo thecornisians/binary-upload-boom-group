@@ -29,9 +29,9 @@
     </div>
     <!--add comments form-->
     <div>
-      <form action="/comment/createComment/<%= post._id%>" enctype="multipart/form-data" method="POST">
+      <form action="/comment/createComment/<%= post._id%>" method="POST">
         <div class="mb-3">
-            <input type="text" class="form-control" id="title" name="title">
+            <input type="text" class="form-control" id="comment" name="comment">
             
             <!--<label for="title" class="form-label">Post Comment</label> -->
         </div>
