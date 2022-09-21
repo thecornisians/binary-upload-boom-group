@@ -22,14 +22,27 @@
         background-size: cover;
   }
 
-  .background-login{
-      background-image: url(../imgs/main.jpg);
-      background-blend-mode: normal;
-  }
+.background-login{
+    background-image: url(../imgs/main.jpg);
+    background-blend-mode: normal;
+}
 
-
-
-  .bg-glass {
+.bg-glass {
     background-color: hsla(0, 0%, 100%, 0.9) ;
     backdrop-filter: saturate(200%) blur(25px);
-  }
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
