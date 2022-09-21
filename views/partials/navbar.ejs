@@ -9,14 +9,14 @@
       <!-- dropdown-start -->
       <div class="btn-group">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            username
+         <%= user.userName %>
         </button>
         <ul class="dropdown-menu dropdown-menu-start">
-            <li><button class="dropdown-item" type="button"><a href="/profile">Profile</a></button></li>
+          <li><button class="dropdown-item" type="button">Dark Mode</button></li>
           <li><hr class="dropdown-divider"></li>
-          <li><button class="dropdown-item" type="button"><a href="/feed">Feed</a></button></li>
+          <li><button class="dropdown-item href=#" type="button">Settings</button></li>
           <li><hr class="dropdown-divider"></li>
-          <li><button class="dropdown-item" type="button"><a href="/logout">Logout</a></button></li>
+          <li><button class="dropdown-item" href="/logout" type="button">Logout</button></li>
         </ul>
       </div>
       <!-- dropdown-end -->
