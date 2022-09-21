@@ -2,12 +2,15 @@ const cloudinary = require("../middleware/cloudinary");
 const { remove } = require("../models/Post");
 const Post = require("../models/Post");
 const Comments = require("../models/Comments")
+const User = require("../models/User");
 
 module.exports = {
   getProfile: async (req, res) => {
     try {
       const posts = await Post.find({ user: req.user.id });
+      //const user = await User.find({ user: req.user.id  })  
       res.render("profile.ejs", { posts: posts, user: req.user });
+      //res.render("navbar.ejs", { user: req.user });
     } catch (err) {
       console.log(err);
     }
@@ -16,6 +19,7 @@ module.exports = {
     try {
       const posts = await Post.find().sort({ createdAt: "desc" }).lean();
       res.render("feed.ejs", { posts: posts });
+      //res.render("navbar.ejs", { user: req.user });
     } catch (err) {
       console.log(err);
     }
